@@ -1,0 +1,25 @@
+// Routes
+/**
+ * @swagger
+ * /updataproduct:
+ *    put:
+ *      tags:
+ *         - Product
+ *      description: Use to return all customers
+ *    parameters:
+ *      - name: customer
+ *        in: query
+ *        description: Name of our customer
+ *        required: false
+ *        schema:
+ *          type: string
+ *          format: string
+ *    responses:
+ *      '201':
+ *        description: Successfully created user
+ */
+routes.post("/", (req, res)=>{
+    return res.status(200).send("Create product");
+})
+
+module.exports = routes;
